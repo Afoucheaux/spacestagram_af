@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import RightArrow from '../RightArrow/RightArrow';
 import LeftArrow from '../LeftArrow/LeftArrow';
-import './CarouselLayout.css';
+import './Carousel.css';
 import {CarouselProps} from '../../interface';
 
 const CarouselLayout = ({slides}:CarouselProps):JSX.Element => {
 
   const [currentSlides, setCurrentSlides] = useState<JSX.Element[]>([]);
   const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    buildNewSlideDeck(slideIndex);
+  }, [slideIndex]);
 
   const previousSlide = () => {
     if (slideIndex >= slides.length - 1) {

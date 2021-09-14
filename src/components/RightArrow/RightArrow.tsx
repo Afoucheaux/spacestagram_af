@@ -1,11 +1,8 @@
 import './RightArrow.css'
 import { FiArrowRightCircle } from 'react-icons/fi'
+import {rightArrowProps} from '../../interface';
 
-interface RightArrowProps {
-  nextSlide():void
-}
-
-const RightArrow = ({nextSlide}:RightArrowProps) => {
+const RightArrow = ({nextSlide}:rightArrowProps) => {
   return (
     <div className="arrow">
       <FiArrowRightCircle onClick={() => nextSlide()}></FiArrowRightCircle>
