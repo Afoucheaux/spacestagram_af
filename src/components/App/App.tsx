@@ -3,6 +3,7 @@ import './App.css';
 import {getPlanetaryDataJSON} from '../../apiCalls';
 import PlanetCard from '../PlanetCard/PlanetCard';
 import {PlanetInfo} from '../../interface';
+import Header from '../Header/Header';
 
 function App() {
   const [planetaryDisplay, setPlanetaryDisplay] = useState<JSX.Element[]>();
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <Header />
       {planetaryDisplay}
     </>
   );
