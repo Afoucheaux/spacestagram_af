@@ -6,7 +6,7 @@ import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 const PlanetCard = ({title, date, explanation, url}: PlanetInfo): JSX.Element => {
   const [liked, setLiked] = useState(false);
 
-  const useInput = () => {
+  const userInput = () => {
     if (liked) {
       setLiked(false);
     } else {
@@ -20,8 +20,8 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfo): JSX.Element =>
       <img src={url} alt={`picture of ${title}`} className='planetImgage'/>
       <p className='moreInfo'>{explanation}</p>
       <p>{date}</p>
-      {liked && <AiFillHeart onClick={() => useInput()}></AiFillHeart>}
-      {!liked && <AiOutlineHeart onClick={() => useInput()}></AiOutlineHeart>}
+      {liked && <AiFillHeart onClick={() => userInput()}></AiFillHeart>}
+      {!liked && <AiOutlineHeart onClick={() => userInput()}></AiOutlineHeart>}
     </article>
   )
 }
