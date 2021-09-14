@@ -4,7 +4,6 @@ import {getPlanetaryDataJSON} from '../../apiCalls';
 import PlanetCard from '../PlanetCard/PlanetCard';
 import {PlanetInfo} from '../../interface';
 import Header from '../Header/Header';
-import Carousel from '../Carousel/Carousel';
 
 function App() {
   const [planetaryDisplay, setPlanetaryDisplay] = useState<JSX.Element[]>();
@@ -34,7 +33,9 @@ function App() {
     <>
       <Header />
       {!planetaryDisplay && <p>Preparing For Liftoff...</p>}
-      {planetaryDisplay && <Carousel slides={planetaryDisplay}></Carousel>}
+      <section className='dipslayLayout'>
+        {planetaryDisplay}
+      </section>
     </>
   );
 }

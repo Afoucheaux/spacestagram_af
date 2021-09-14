@@ -15,9 +15,9 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfo): JSX.Element =>
   }
 
   return (
-    <article>
+    <article className='slide'>
       <h1 className='title'>{title}</h1>
-      <img src={url} alt={`picture of ${title}`} className='planetImgage'/>
+      <img src={url} alt={`picture of ${title}`} className='planetImage'/>
       <p className='moreInfo'>{explanation}</p>
       <p>{date}</p>
       {liked && <AiFillHeart onClick={() => userInput()}></AiFillHeart>}

@@ -4,15 +4,3 @@ export interface PlanetInfo {
   explanation: string,
   url: string
 }
-
-export interface CarouselProps {
-  slides: JSX.Element[];
-}
-
-export interface leftArrowProps {
-  previousSlide():void
-}
-
-export interface rightArrowProps {
-  nextSlide():void,
-}
