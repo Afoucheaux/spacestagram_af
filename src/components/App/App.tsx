@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react';
 import './App.css';
-import {getPlanetaryData} from '../../apiCalls';
+import {getPlanetaryDataJSON} from '../../apiCalls';
 
 function App() {
   const [planetaryData, setPlanetaryData] = useState([])
 
   useEffect(() => {
-    getPlanetaryData()
+    getPlanetaryDataJSON()
     .then(data => setPlanetaryData(data))
     .catch(err => console.log(err))
   }, [])
