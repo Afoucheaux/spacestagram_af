@@ -32,6 +32,7 @@ function App() {
   return (
     <>
       <Header />
+      {!planetaryDisplay && <p>Preparing For Liftoff...</p>}
       {planetaryDisplay}
     </>
   );
