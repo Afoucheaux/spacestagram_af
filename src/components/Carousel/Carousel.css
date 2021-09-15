@@ -1,0 +1,23 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first {
+  z-index: 1;
+  position: absolute;
+}
+
+.second {
+  opacity: .55;
+}
+
+.last {
+  opacity: .55;
+}
+
+.hide {
+  display: none;
+}
