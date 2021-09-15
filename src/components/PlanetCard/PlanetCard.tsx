@@ -1,7 +1,7 @@
 import  {useState} from 'react';
 import './PlanetCard.css';
 import {PlanetInfoProps} from '../../interface';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Element => {
   const [liked, setLiked] = useState(false);

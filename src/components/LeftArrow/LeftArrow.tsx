@@ -1,5 +1,5 @@
 import React from 'react';
-import './LeftArrow.scss'
+import './LeftArrow.css'
 import { FiArrowLeftCircle } from 'react-icons/fi'
 /**
  * @props Passed down function from carousel layout that decrements currentSlideIndex - 1

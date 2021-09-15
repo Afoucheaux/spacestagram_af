@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import RightArrow from '../RightArrow/RightArrow';
 import LeftArrow from '../LeftArrow/LeftArrow';
-import './CarouselLayout.scss';
+import './Carousel.css';
 import {CarouselProps} from '../../interface';
 
-const CarouselLayout = ({slides}:CarouselProps):JSX.Element => {
+const Carousel = ({slides}:CarouselProps):JSX.Element => {
 
   const [currentSlides, setCurrentSlides] = useState<JSX.Element[]>([]);
   const [slideIndex, setSlideIndex] = useState(0);
@@ -30,52 +30,31 @@ const CarouselLayout = ({slides}:CarouselProps):JSX.Element => {
     for(let i = index; i <= slides.length - 1 + index; i++){
       newSlideDeck.push(slides[i % slides.length]);
     }
-    const fill = addStyling(newSlideDeck);
-    setCurrentSlides(fill);
+    const display = addStyling(newSlideDeck);
+    setCurrentSlides(display);
   }
 
   const addStyling = (deck: JSX.Element[]) => {
-    const sortedDeck = createLoop(deck)
-    const update = sortedDeck.map((card, i) => {
-      return (
-        <div className={`card${i}`} key={i}>{card}</div>
-      )
+    const update = deck.map((card, i) => {
+      if (i === 0) {
+        return (
+          <div className={`first`} key={i}>{card}</div>
+        )
+     } else if (i === 1) {
+        return (
+          <div className={`second`} key={i}>{card}</div>
+        )
+     } else if (i === deck.length - 1) {
+        return (
+          <div className={`last`} key={i}>{card}</div>
+        )
+     } else {
+        return (
+          <div className={`hide`} key={i}>{card}</div>
+        )
+     }
     })
     return update
-  }
-
-  const createLoop = (deck: JSX.Element[]) => {
-    let newSlideDeck: JSX.Element[] = [];
-      if (deck.length % 2 === 0) {
-        newSlideDeck = evenLength(deck)
-      } else {
-        newSlideDeck = oddLength(deck)
-      }
-    return newSlideDeck;
-  }
-
-  const evenLength = (deck: JSX.Element[]) => {
-    const newSlideDeck: JSX.Element[] = [];
-    for(let i = 0; i < deck.length; i++) {
-      if(i + deck.length / 2 >= deck.length) {
-        newSlideDeck.push(deck[i - deck.length / 2])
-      } else {
-        newSlideDeck.push(deck[i + deck.length / 2])
-      }
-    }
-    return newSlideDeck
-  }
-
-  const oddLength = (deck: JSX.Element[]) => {
-    const newSlideDeck: JSX.Element[] = [];
-    for(let i = 0; i < deck.length; i++) {
-      if(i + Math.floor(deck.length / 2) >= deck.length - 1) {
-        newSlideDeck.push(deck[i - Math.floor(deck.length / 2)])
-      } else {
-        newSlideDeck.push(deck[i + Math.ceil(deck.length / 2)])
-      }
-    }
-    return newSlideDeck
   }
 
   return (
@@ -87,4 +66,4 @@ const CarouselLayout = ({slides}:CarouselProps):JSX.Element => {
   )
 }
 
-export default CarouselLayout;
+export default Carousel;

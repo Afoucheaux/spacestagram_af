@@ -1,4 +1,4 @@
-import './RightArrow.scss';
+import './RightArrow.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import {RightArrowProps} from '../../interface';
 
