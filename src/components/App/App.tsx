@@ -32,8 +32,8 @@ function App() {
   return (
     <>
       <Header />
-      {!planetaryDisplay && <p>Preparing For Liftoff...</p>}
       <section className='dipslayLayout'>
+        {!planetaryDisplay && <p>Preparing For Liftoff...</p>}
         {planetaryDisplay}
       </section>
     </>

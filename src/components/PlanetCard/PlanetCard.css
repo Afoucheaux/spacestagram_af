@@ -1,9 +1,9 @@
 .slide {
-  width: 20vw;
-  height: 25vh;
-  
+  width: 28vw;
+  height: 60vh;
+  margin: 1%;
 }
 
 .planetImage {
-  width: 20vw;
+  width: 25vw;
 }
