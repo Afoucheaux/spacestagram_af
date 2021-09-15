@@ -13,13 +13,13 @@ const Carousel = ({slides}:CarouselProps):JSX.Element => {
     buildNewSlideDeck(slideIndex);
   }, [slideIndex]);
 
-  const previousSlide = () => {
+  const nextSlide = () => {
     if (slideIndex >= slides.length - 1) {
       setSlideIndex(0);
     } else setSlideIndex(slideIndex + 1);
   }
 
-  const nextSlide = () => {
+  const previousSlide = () => {
     if (slideIndex <= 0) {
       setSlideIndex(slides.length - 1);
     } else setSlideIndex(slideIndex - 1);

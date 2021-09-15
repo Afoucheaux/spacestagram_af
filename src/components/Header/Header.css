@@ -4,4 +4,10 @@
   align-items: center;
   height: 8vh;
   margin: 0;
+  background-color: RGB(20,60,81);
+}
+
+.siteTitle {
+  font-size: 2em;
+  color: RGB(233, 245, 248)
 }

@@ -1,15 +1,11 @@
-import React from 'react';
 import './LeftArrow.css'
 import { FiArrowLeftCircle } from 'react-icons/fi'
-/**
- * @props Passed down function from carousel layout that decrements currentSlideIndex - 1
- *
- * @renders left arrow that navigates to the previous slide on click
- */
-const LeftArrow = ({previousSlide}:any) => {
+import {LeftArrowProps} from '../../interface';
+
+const LeftArrow = ({previousSlide}:LeftArrowProps) => {
   return (
     <div className="arrow">
-      <FiArrowLeftCircle onClick={() => previousSlide()}></FiArrowLeftCircle>
+      <FiArrowLeftCircle onClick={() => previousSlide()} size='50'></FiArrowLeftCircle>
     </div>
   );
 }
