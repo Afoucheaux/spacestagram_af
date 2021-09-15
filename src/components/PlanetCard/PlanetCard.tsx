@@ -1,9 +1,9 @@
 import  {useState} from 'react';
 import './PlanetCard.css';
-import {PlanetInfo} from '../../interface';
+import {PlanetInfoProps} from '../../interface';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
 
-const PlanetCard = ({title, date, explanation, url}: PlanetInfo): JSX.Element => {
+const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Element => {
   const [liked, setLiked] = useState(false);
 
   const userInput = () => {

@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import './App.css';
 import {getPlanetaryDataJSON} from '../../apiCalls';
 import PlanetCard from '../PlanetCard/PlanetCard';
-import {PlanetInfo} from '../../interface';
+import {PlanetInfoProps} from '../../interface';
 import Header from '../Header/Header';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     .catch(err => console.log(err))
   }, [])
 
-  const planetDislay = (data: PlanetInfo[]) => {
+  const planetDislay = (data: PlanetInfoProps[]) => {
     const display = data.map((planet, i) => {
       return (
         <PlanetCard
