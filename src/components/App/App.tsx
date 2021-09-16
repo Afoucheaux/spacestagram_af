@@ -16,6 +16,7 @@ function App() {
   }, [])
 
   const planetDislay = (data: PlanetInfoProps[]) => {
+    console.log(data)
     const display = data.map((planet, i) => {
       return (
         <PlanetCard
