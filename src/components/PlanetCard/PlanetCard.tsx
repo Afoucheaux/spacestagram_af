@@ -4,13 +4,13 @@ import {PlanetInfoProps} from '../../interface';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Element => {
-  const [liked, setLiked] = useState(false);
+  const [userLiked, setUserLiked] = useState(false);
 
   const userInput = () => {
-    if (liked) {
-      setLiked(false);
+    if (userLiked) {
+      setUserLiked(false);
     } else {
-      setLiked(true);
+      setUserLiked(true);
     }
   }
 
@@ -21,8 +21,8 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Eleme
       <p className='moreInfo'>{explanation}</p>
       <div className='bottomLayout'>
         <p>{date}</p>
-        {liked && <AiFillHeart onClick={() => userInput()}></AiFillHeart>}
-        {!liked && <AiOutlineHeart onClick={() => userInput()}></AiOutlineHeart>}
+        {userLiked && <AiFillHeart onClick={() => userInput()}></AiFillHeart>}
+        {!userLiked && <AiOutlineHeart onClick={() => userInput()}></AiOutlineHeart>}
       </div>
     </article>
   )

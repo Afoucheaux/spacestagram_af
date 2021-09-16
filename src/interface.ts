@@ -2,7 +2,7 @@ export interface PlanetInfoProps {
   title: string,
   date: string,
   explanation: string,
-  url: string
+  url: string,
 }
 export interface RightArrowProps {
   nextSlide():void
