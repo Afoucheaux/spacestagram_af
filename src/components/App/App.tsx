@@ -8,6 +8,7 @@ import Carousel from '../Carousel/Carousel';
 
 function App() {
   const [planetaryDisplay, setPlanetaryDisplay] = useState<JSX.Element[]>();
+  const [userLiked, setUserLiked] = useState([]);
 
   useEffect(() => {
     getPlanetaryDataJSON()
