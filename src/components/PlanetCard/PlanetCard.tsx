@@ -1,16 +1,33 @@
-import  {useState} from 'react';
+import  {useState, useContext, useEffect} from 'react';
 import './PlanetCard.css';
 import {PlanetInfoProps} from '../../interface';
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
+import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
+import {UserContext} from '../../Context/UserContext';
 
 const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Element => {
-  const [userLiked, setUserLiked] = useState(false);
+  const {userLiked, addLiked, deleteLiked} = useContext(UserContext);
+  const [isLiked, setIsLiked] = useState(false);
+
+  useEffect(() => {
+    checkedIfLiked();
+  }, [])
 
   const userInput = () => {
-    if (userLiked) {
-      setUserLiked(false);
+    if (isLiked) {
+      setIsLiked(false);
+      deleteLiked(title);
     } else {
-      setUserLiked(true);
+      setIsLiked(true);
+      addLiked(title);
+    }
+  }
+
+  const checkedIfLiked = () => {
+    const liked = userLiked.find(likedTitle => likedTitle === title)
+    if(liked !== undefined) {
+      setIsLiked(true)
+    } else {
+      return
     }
   }
 
@@ -21,8 +38,8 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Eleme
       <p className='moreInfo'>{explanation}</p>
       <div className='bottomLayout'>
         <p>{date}</p>
-        {userLiked && <AiFillHeart onClick={() => userInput()}></AiFillHeart>}
-        {!userLiked && <AiOutlineHeart onClick={() => userInput()}></AiOutlineHeart>}
+        {isLiked&& <AiFillHeart onClick={() => userInput()}></AiFillHeart>}
+        {!isLiked && <AiOutlineHeart onClick={() => userInput()}></AiOutlineHeart>}
       </div>
     </article>
   )

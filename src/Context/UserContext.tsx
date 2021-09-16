@@ -17,6 +17,8 @@ export const UserContextProvider: React.FC = ({ children }) => {
     if (toAdd === undefined) {
       const adding = [...userLiked, titleToAdd]
       setUserLiked(adding)
+    } else {
+      return
     }
   }
 
