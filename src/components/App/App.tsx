@@ -41,8 +41,8 @@ function App() {
     <>
       <Header />
       <section className='dipslayLayout'>
-        {apiError && <p className='message'>Server is currently unavailable. Please try back later.</p>}
-        {!planetaryDisplay && <p className='message'>Preparing For Liftoff...</p>}
+        {apiError && <p className='message' data-cy='errorMessage'>Server is currently unavailable. Please try back later.</p>}
+        {!planetaryDisplay && !apiError && <p className='message' data-cy='loadingMessage'>Preparing For Liftoff...</p>}
         {planetaryDisplay && <Carousel slides={planetaryDisplay} />}
       </section>
     </>
