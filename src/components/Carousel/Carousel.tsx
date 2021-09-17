@@ -58,7 +58,7 @@ const Carousel = ({slides}:CarouselProps):JSX.Element => {
   }
 
   return (
-    <section className="carousel">
+    <section className="carousel" data-cy='carousel'>
       <LeftArrow previousSlide={previousSlide}></LeftArrow>
       {currentSlides ? currentSlides : slides}
       <RightArrow nextSlide={nextSlide}></RightArrow>

@@ -36,7 +36,7 @@
     hdurl: "https://apod.nasa.gov/apod/image/1607/UludagPeaksMilky2016_tezel.jpg",
     media_type: "image",
     service_version: "v1",
-    title: "Test Data Three",
+    title: "Test Data THREE",
     url: "https://apod.nasa.gov/apod/image/1607/UludagPeaksMilky20161024_tezel.jpg"
   },
   {
