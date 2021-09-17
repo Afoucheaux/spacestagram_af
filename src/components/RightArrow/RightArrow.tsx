@@ -4,7 +4,7 @@ import {RightArrowProps} from '../../interface';
 
 const RightArrow = ({nextSlide}:RightArrowProps) => {
   return (
-    <div className="arrow">
+    <div className="arrow rightArrow">
       <FiArrowRightCircle onClick={() => nextSlide()} size='50' data-cy='rightArrow'></FiArrowRightCircle>
     </div>
   );

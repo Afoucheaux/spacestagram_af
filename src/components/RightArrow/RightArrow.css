@@ -6,7 +6,9 @@
 
   .arrow {
     z-index: 1;
-    
   }
 
+  .rightArrow {
+    margin-left: 37vw;
+  }
 }
