@@ -8,11 +8,12 @@ import Carousel from '../Carousel/Carousel';
 
 function App() {
   const [planetaryDisplay, setPlanetaryDisplay] = useState<JSX.Element[]>();
+  const [apiError, setApiError] = useState(false)
 
   useEffect(() => {
     getPlanetaryDataJSON()
     .then(data => planetDislay(data))
-    .catch(err => console.log(err))
+    .catch(err => handleError(err))
   }, [])
 
   const planetDislay = (data: PlanetInfoProps[]) => {
@@ -27,14 +28,21 @@ function App() {
         />
       )
     })
-  setPlanetaryDisplay(display)
+    setPlanetaryDisplay(display)
+    setApiError(false)
+  }
+
+  const handleError = (errorMessage: string) => {
+    console.log(errorMessage);
+    setApiError(true);
   }
 
   return (
     <>
       <Header />
       <section className='dipslayLayout'>
-        {!planetaryDisplay && <p>Preparing For Liftoff...</p>}
+        {apiError && <p className='message' data-cy='errorMessage'>Server is currently unavailable. Please try back later.</p>}
+        {!planetaryDisplay && !apiError && <p className='message' data-cy='loadingMessage'>Preparing For Liftoff...</p>}
         {planetaryDisplay && <Carousel slides={planetaryDisplay} />}
       </section>
     </>

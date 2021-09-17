@@ -5,7 +5,7 @@ import {LeftArrowProps} from '../../interface';
 const LeftArrow = ({previousSlide}:LeftArrowProps) => {
   return (
     <div className="arrow">
-      <FiArrowLeftCircle onClick={() => previousSlide()} size='50'></FiArrowLeftCircle>
+      <FiArrowLeftCircle onClick={() => previousSlide()} size='50' data-cy='leftArrow'></FiArrowLeftCircle>
     </div>
   );
 }
