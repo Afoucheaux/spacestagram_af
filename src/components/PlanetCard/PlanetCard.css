@@ -18,6 +18,7 @@
   width: 38vw;
   max-height: 15vh;
   background-color: RGB(169, 224, 230);
+  font-weight: bold;
 }
 
 .bottomLayout {
@@ -26,6 +27,15 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.title {
+  font-size: 1.25em;
+}
+
+.fullHeart {
+  color: red
+}
+
 
 @media only screen and (max-width: 500px) {
 
@@ -47,5 +57,9 @@
 
   .bottomLayout {
     width: 75vw;
+  }
+
+  .title {
+    font-size: 1em;
   }
 }

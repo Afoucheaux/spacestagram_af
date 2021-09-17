@@ -38,8 +38,8 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Eleme
       <p className='moreInfo' data-cy='moreInfo'>{explanation}</p>
       <div className='bottomLayout'>
         <p data-cy='date'>{date}</p>
-        {isLiked&& <AiFillHeart data-cy='fullHeart' onClick={() => userInput()}></AiFillHeart>}
-        {!isLiked && <AiOutlineHeart data-cy='outlineHeart' onClick={() => userInput()}></AiOutlineHeart>}
+        {isLiked&& <AiFillHeart className='fullHeart' data-cy='fullHeart' size='30' onClick={() => userInput()}></AiFillHeart>}
+        {!isLiked && <AiOutlineHeart data-cy='outlineHeart' size='25' onClick={() => userInput()}></AiOutlineHeart>}
       </div>
     </article>
   )
