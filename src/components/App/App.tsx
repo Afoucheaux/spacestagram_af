@@ -5,6 +5,7 @@ import PlanetCard from '../PlanetCard/PlanetCard';
 import {PlanetInfoProps} from '../../interface';
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
+import {dateHelper} from '../../helper'
 
 function App() {
   const [planetaryDisplay, setPlanetaryDisplay] = useState<JSX.Element[]>();
@@ -22,7 +23,7 @@ function App() {
         <PlanetCard
           key={i}
           title={planet.title}
-          date={planet.date}
+          date={dateHelper(planet.date)}
           explanation={planet.explanation}
           url={planet.url}
         />

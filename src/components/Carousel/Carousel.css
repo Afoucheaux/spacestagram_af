@@ -21,3 +21,19 @@
 .hide {
   display: none;
 }
+
+@media only screen and (max-width: 500px) {
+
+  .first {
+    z-index: 0;
+  }
+
+  .second {
+    display: none;
+  }
+
+  .last {
+    display: none;
+  }
+
+}
