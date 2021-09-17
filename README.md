@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+## Contact  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://github.com/Afoucheaux) [![GitHub](https://img.shields.io/badge/GitHub-black.svg?&style=flat-square&logo=github&logoColor=white)](https://www.linkedin.com/in/aaron-foucheaux-891626207/) - Aaron Foucheaux
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Set-up Instructions](#set-up-instructions)
+- [Learning Goals](#learning-goals)
+- [Challenges](#challenges)
+- [Wins](#wins)
+- [Functionality](#functionality)
+- [Future Iterations](#future-iterations)
+- [Contributors](#contributors)
 
-### `yarn start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application allows a user to view random images from one of NASA's api. Each image provide addition information of the title, date and description. The user is able to like/unlike images by clicking the heart icon. Project included:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Utilize Context API and React hooks for global user state.
+- Implement E2E test coverage of user flows using Cypress testing.
+- Custom build carousel component.
+- Deployment using Heroku
+- [Deployed app]()
+- [Project Brief and Rubric](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
 
-### `yarn test`
+#### Built With:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React w/hooks & Context API
+- Javascript
+- HTML5
+- CSS
+- Cypress
+- Heroku
 
-### `yarn build`
+## Set-up Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ visit deployed site [here](https://jobfinderfe.herokuapp.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Additionally you can clone down the repo [here](https://github.com/Afoucheaux/spacestagram_af)
+2. Move into the spacestagram_af directory in your terminal.
+3. To see the code itself locally, run `<name of text editor> .`
+  - Run `npm install`
+  - Run `npm start`
+  - visit http://localhost:3000/
+4. To run the test the app must be running on http://localhost:3000/.
+  - In a second terminal move into the spacestagram_af directory.
+  - Run `npm run cypress`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Goals
 
-### `yarn eject`
+- Deminstart 
+-
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Challenges
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Wins
 
-## Learn More
+1.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Functionality
+
+#### Basic run though.
+![Landing Screen](https://media.giphy.com/media/eBqI2nPuGTSjJ3ZWHN/giphy.gif?cid=790b761194716abd8a87a318ea06bb24dd6d79e2302d1604&rid=giphy.gif&ct=g)
+
+#### Like/Unlike Functionality.
+![Like Functionality](https://media.giphy.com/media/LvLNtw6qTSEvdiVact/giphy.gif?cid=790b761176076af8b469a2fbb546b06d835e9974a1a846fd&rid=giphy.gif&ct=g)
+
+
+## Future Iterations
+
+1. Retrofit TypeScript into the application.
+2. Map view of job salaries by region.
+3. Circle CI implementation.
+
+
+## Contributors
+
+* [Aaron Foucheaux](https://github.com/Afoucheaux) - Application FE Co-creator
