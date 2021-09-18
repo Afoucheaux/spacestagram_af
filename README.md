@@ -71,7 +71,7 @@ This application allows a user to view random images from one of NASA's api. Eac
 1. CI implementation.
 2. User login screen with ability to load by date and number of images.
 3. Improved Sad path testing.
-4. Utilization of local storage to persist user's like images.
+4. Utilization of local storage to persist user's liked images.
 
 ## Contributors
 
