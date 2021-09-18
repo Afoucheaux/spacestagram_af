@@ -16,19 +16,19 @@
 
 ## About The Project
 
-This application allows a user to view random images from one of NASA's api. Each image provide addition information of the title, date and description. The user is able to like/unlike images by clicking the heart icon. Project included:
+This application allows a user to view random images from one of NASA's api. Each image provides additional information of the title, date and description. The user is able to like/unlike images by clicking the heart icon. Project included:
 
 - Utilize Context API and React hooks for global user state.
 - Implement E2E test coverage of user flows using Cypress testing.
 - Custom build carousel component.
 - Deployment using Heroku
 - [Deployed app]()
-- [Project Brief and Rubric](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
+- [Project Brief](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
 
 #### Built With:
 
 - React w/hooks & Context API
-- Javascript
+- TypeScript
 - HTML5
 - CSS
 - Cypress
@@ -44,13 +44,13 @@ This application allows a user to view random images from one of NASA's api. Eac
   - Run `npm install`
   - Run `npm start`
   - visit http://localhost:3000/
-4. To run the test the app must be running on http://localhost:3000/.
+4. To run the tests the app must be running on http://localhost:3000/.
   - In a second terminal move into the spacestagram_af directory.
   - Run `npm run cypress`
 
 ## Goals
 
-- Deminstart 
+- Achieve MVP to demonstrate my level of technical proficiency.
 -
 
 
@@ -74,8 +74,8 @@ This application allows a user to view random images from one of NASA's api. Eac
 
 ## Future Iterations
 
-1. Retrofit TypeScript into the application.
-2. Map view of job salaries by region.
+1.
+2.
 3. Circle CI implementation.
 
 
