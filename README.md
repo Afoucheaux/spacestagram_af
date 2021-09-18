@@ -8,8 +8,7 @@
 - [Built With](#built-with)
 - [Set-up Instructions](#set-up-instructions)
 - [Learning Goals](#learning-goals)
-- [Challenges](#challenges)
-- [Wins](#wins)
+- [Challenges/Wins](#challenges)
 - [Functionality](#functionality)
 - [Future Iterations](#future-iterations)
 - [Contributors](#contributors)
@@ -22,7 +21,7 @@ This application allows a user to view random images from one of NASA's api. Eac
 - Implement E2E test coverage of user flows using Cypress testing.
 - Custom build carousel component.
 - Deployment using Heroku
-- [Deployed app]()
+- [Deployed app](https://spacestagram-af.herokuapp.com/)
 - [Project Brief](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
 
 #### Built With:
@@ -36,7 +35,7 @@ This application allows a user to view random images from one of NASA's api. Eac
 
 ## Set-up Instructions
 
- visit deployed site [here](https://jobfinderfe.herokuapp.com/)
+ visit deployed site [here](https://spacestagram-af.herokuapp.com/)
 
 1. Additionally you can clone down the repo [here](https://github.com/Afoucheaux/spacestagram_af)
 2. Move into the spacestagram_af directory in your terminal.
@@ -51,33 +50,28 @@ This application allows a user to view random images from one of NASA's api. Eac
 ## Goals
 
 - Achieve MVP to demonstrate my level of technical proficiency.
--
+- Create an intuitive user interface.
+- Testing of user flow.  
 
+## Challenges/Wins
 
-## Challenges
-
-1.
-
-## Wins
-
-1.
-
+1. Building of the carousel component.  
 
 ## Functionality
 
 #### Basic run though.
 ![Landing Screen](https://media.giphy.com/media/eBqI2nPuGTSjJ3ZWHN/giphy.gif?cid=790b761194716abd8a87a318ea06bb24dd6d79e2302d1604&rid=giphy.gif&ct=g)
 
-#### Like/Unlike Functionality.
+#### Like/Unlike.
 ![Like Functionality](https://media.giphy.com/media/LvLNtw6qTSEvdiVact/giphy.gif?cid=790b761176076af8b469a2fbb546b06d835e9974a1a846fd&rid=giphy.gif&ct=g)
 
 
 ## Future Iterations
 
-1.
-2.
-3. Circle CI implementation.
-
+1. CI implementation.
+2. User login screen with ability to load by date and number of images.
+3. Improved Sad path testing.
+4. Utilization of local storage to persist user's like images.
 
 ## Contributors
 
