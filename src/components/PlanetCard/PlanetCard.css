@@ -55,6 +55,10 @@
   color: RGB(233, 245, 248)
 }
 
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
 
 @media only screen and (max-width: 500px) {
 

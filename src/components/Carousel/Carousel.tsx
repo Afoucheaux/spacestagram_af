@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import Arrow from '../Arrow/Arrow';
 import './Carousel.css';
+import Arrow from '../Arrow/Arrow';
 import {CarouselProps} from '../../interface';
 
 const Carousel = ({slides}:CarouselProps):JSX.Element => {
@@ -51,7 +51,7 @@ const Carousel = ({slides}:CarouselProps):JSX.Element => {
         return (
           <div className={`hide`} key={i}>{card}</div>
         )
-     }
+      }
     })
     return update
   }
