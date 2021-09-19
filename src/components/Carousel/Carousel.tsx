@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import RightArrow from '../RightArrow/RightArrow';
 import LeftArrow from '../LeftArrow/LeftArrow';
+import Arrow from '../Arrow/Arrow';
 import './Carousel.css';
 import {CarouselProps} from '../../interface';
 
@@ -59,9 +60,9 @@ const Carousel = ({slides}:CarouselProps):JSX.Element => {
 
   return (
     <section className="carousel" data-cy='carousel'>
-      <LeftArrow previousSlide={previousSlide}></LeftArrow>
+      <Arrow previousSlide={previousSlide} nextSlide={nextSlide} direction='left'></Arrow>
       {currentSlides ? currentSlides : slides}
-      <RightArrow nextSlide={nextSlide}></RightArrow>
+      <Arrow previousSlide={previousSlide} nextSlide={nextSlide} direction='right'></Arrow>
     </section>
   )
 }
