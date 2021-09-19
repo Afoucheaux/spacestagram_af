@@ -6,20 +6,20 @@
 
 - [About the Project](#about-the-project)
 - [Built With](#built-with)
-- [Set-up Instructions](#set-up-instructions)
+- [Setup Instructions](#setup-instructions)
 - [Learning Goals](#learning-goals)
 - [Challenges/Wins](#challenges)
 - [Functionality](#functionality)
 - [Future Iterations](#future-iterations)
 - [Contributors](#contributors)
 
-## About The Project
+## About the Project
 
-This application allows a user to view random images from one of NASA's api. Each image provides additional information of the title, date and description. The user is able to like/unlike images by clicking the heart icon. Project included:
+This application allows a user to view random images from one of NASA's APIs. Each image provides additional information of the title, date and description. The user is able to like/unlike images by clicking the heart icon. Some highlights of this project are:
 
-- Utilize Context API and React hooks for global user state.
-- Implement E2E test coverage of user flows using Cypress testing.
-- Custom build carousel component.
+- Use of Context API and React hooks for global user state
+- E2E test coverage of user flows using the Cypress library
+- Custom built carousel component
 - Deployment using Heroku
 - [Deployed app](https://spacestagram-af.herokuapp.com/)
 - [Project Brief](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#)
@@ -33,46 +33,42 @@ This application allows a user to view random images from one of NASA's api. Eac
 - Cypress
 - Heroku
 
-## Set-up Instructions
+## Setup Instructions
 
- visit deployed site [here](https://spacestagram-af.herokuapp.com/)
+The site is deployed [here](https://spacestagram-af.herokuapp.com/)
 
-1. Additionally you can clone down the repo [here](https://github.com/Afoucheaux/spacestagram_af)
-2. Move into the spacestagram_af directory in your terminal.
-3. To see the code itself locally, run `<name of text editor> .`
-  - Run `npm install`
-  - Run `npm start`
-  - visit http://localhost:3000/
-4. To run the tests the app must be running on http://localhost:3000/.
-  - In a second terminal move into the spacestagram_af directory.
-  - Run `npm run cypress`
+1. Clone the repo [here](https://github.com/Afoucheaux/spacestagram_af)
+2. Run `npm install`
+3. Run `npm start`
+4. Visit http://localhost:3000/
+5. To run the tests, ensure the app is running on http://localhost:3000/ and run `npm run cypress`
 
 ## Goals
 
-- Achieve MVP to demonstrate my level of technical proficiency.
-- Create an intuitive user interface.
-- Testing of user flow.  
+- Demonstrate my level of technical proficiency by achieving an MVP
+- Create an intuitive user interface
+- Test user flow
 
 ## Challenges/Wins
 
-1. Building of the carousel component.  
+- Building of the carousel component
 
 ## Functionality
 
-#### Basic run though.
+#### Basic run though
 ![Landing Screen](https://media.giphy.com/media/eBqI2nPuGTSjJ3ZWHN/giphy.gif?cid=790b761194716abd8a87a318ea06bb24dd6d79e2302d1604&rid=giphy.gif&ct=g)
 
-#### Like/Unlike.
+#### Like/Unlike
 ![Like Functionality](https://media.giphy.com/media/LvLNtw6qTSEvdiVact/giphy.gif?cid=790b761176076af8b469a2fbb546b06d835e9974a1a846fd&rid=giphy.gif&ct=g)
 
 
 ## Future Iterations
 
-1. CI implementation.
-2. User login screen with ability to load by date and number of images.
-3. Improved Sad path testing.
-4. Utilization of local storage to persist user's liked images.
-5. Default image added for api data that does not contain a valid image url.
+1. CI implementation
+2. User login screen with the ability to load by date and number of images
+3. Improved sad path testing
+4. Utilization of LocalStorage to persist a user's liked images
+5. Display a default image when returned API data does not contain a valid image URL
 
 ## Contributors
 
