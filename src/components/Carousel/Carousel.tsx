@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import RightArrow from '../RightArrow/RightArrow';
-import LeftArrow from '../LeftArrow/LeftArrow';
 import Arrow from '../Arrow/Arrow';
 import './Carousel.css';
 import {CarouselProps} from '../../interface';
