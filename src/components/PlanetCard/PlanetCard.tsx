@@ -35,9 +35,9 @@ const PlanetCard = ({title, date, explanation, url}: PlanetInfoProps): JSX.Eleme
     <article className='slide' data-cy='slide'>
       <h1 className='title' data-cy='title'>{title}</h1>
       <img src={url} alt={`picture of ${title}`} className='planetImage' data-cy='planetImage'/>
-      <p className='moreInfo' data-cy='moreInfo'>{explanation}</p>
+      <p className='moreInfo' data-cy='moreInfo'><span className='tab'></span>{explanation}</p>
       <div className='bottomLayout'>
-        <p  className='date' data-cy='date'>{`taken on: ${date}`}</p>
+      <p  className='date' data-cy='date'>{`taken on: ${date}`}</p>
         {isLiked&& <AiFillHeart className='fullHeart' data-cy='fullHeart' size='30' onClick={() => userInput()}></AiFillHeart>}
         {!isLiked && <AiOutlineHeart className='outlineHeart' data-cy='outlineHeart' size='25' onClick={() => userInput()}></AiOutlineHeart>}
       </div>
