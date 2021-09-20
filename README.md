@@ -61,6 +61,10 @@ The site is deployed [here](https://spacestagram-af.herokuapp.com/)
 #### Like/Unlike
 ![Like Functionality](https://media.giphy.com/media/LvLNtw6qTSEvdiVact/giphy.gif?cid=790b761176076af8b469a2fbb546b06d835e9974a1a846fd&rid=giphy.gif&ct=g)
 
+#### Accessibility
+<p align='left'>Search All Recipes</br>
+<img width='1000' height='500' src="./assets/spacestagram_accessibility.png">
+</p>
 
 ## Future Iterations
 
