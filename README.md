@@ -64,6 +64,8 @@ The site is deployed [here](https://spacestagram-af.herokuapp.com/)
 #### Accessibility
 ![Accessibility Audit](https://i.ibb.co/RckKSwr/spacestagram-accessibility.png)
 
+<a href="https://ibb.co/dDwvcYC"><img src="https://i.ibb.co/Hqfy28w/spacestagram-accessibility.png" alt="spacestagram-accessibility" border="0"></a>
+
 ## Future Iterations
 
 1. CI implementation
