@@ -63,7 +63,7 @@ The site is deployed [here](https://spacestagram-af.herokuapp.com/)
 
 #### Accessibility
 <p align='left'>Search All Recipes</br>
-<img width='1000' height='500' src="./assets/spacestagram_accessibility.png">
+<img width='500' height='300' src="./assets/spacestagram_accessibility.png">
 </p>
 
 ## Future Iterations
