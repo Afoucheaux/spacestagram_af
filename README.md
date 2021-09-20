@@ -62,8 +62,6 @@ The site is deployed [here](https://spacestagram-af.herokuapp.com/)
 ![Like Functionality](https://media.giphy.com/media/LvLNtw6qTSEvdiVact/giphy.gif?cid=790b761176076af8b469a2fbb546b06d835e9974a1a846fd&rid=giphy.gif&ct=g)
 
 #### Accessibility
-![Accessibility Audit](https://i.ibb.co/RckKSwr/spacestagram-accessibility.png)
-
 <a href="https://ibb.co/dDwvcYC"><img src="https://i.ibb.co/Hqfy28w/spacestagram-accessibility.png" alt="spacestagram-accessibility" border="0"></a>
 
 ## Future Iterations
